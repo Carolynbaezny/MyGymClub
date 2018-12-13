@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import cn.bmob.v3.BmobUser;
+
 public class profile extends AppCompatActivity {
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -38,6 +40,10 @@ public class profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        BmobUser user = BmobUser.getCurrentUser();
+
+        TextView username = (TextView) findViewById(R.id.profilepage_name);
+        username.setText(user.getUsername());
 
         Button schedulebtn = (Button) findViewById(R.id.myschedule);
 
@@ -57,7 +63,7 @@ public class profile extends AppCompatActivity {
             }
         });
 
-        Button logout = (Button) findViewById(R.id.logout);
+        Button logout = (Button) findViewById(R.id.settings);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override

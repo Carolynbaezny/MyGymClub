@@ -22,14 +22,14 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_gravity="center"
-            android:layout_weight="1"
+            android:layout_weight="7"
             android:orientation="vertical">
 
 
             <LinearLayout
                 android:id="@+id/signpage_layout"
                 android:layout_width="250dp"
-                android:layout_height="215dp"
+                android:layout_height="350dp"
                 android:layout_gravity="center"
                 android:background="@drawable/button_shape"
                 android:gravity="center"
@@ -38,7 +38,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="0.5" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -49,7 +49,21 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.5" />
+
+                    <EditText
+                        android:id="@+id/signpage_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:hint="USERNAME"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5" />
 
                     <EditText
                         android:id="@+id/signpage_email"
@@ -57,13 +71,28 @@
                         android:layout_height="0dp"
                         android:hint="EMAIL"
                         android:textAlignment="center"
-                        android:layout_weight="1.5"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:inputType="textEmailAddress"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5" />
+
+                    <EditText
+                        android:id="@+id/signpage_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:hint="YOUR NAME"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
                         android:layout_gravity="center" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.5" />
 
                     <EditText
                         android:id="@+id/signpage_password"
@@ -71,19 +100,35 @@
                         android:textAlignment="center"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1.5"
+                        android:layout_weight="1"
+                        android:inputType="textPassword"
                         android:layout_gravity="center" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.5" />
+
+                    <EditText
+                        android:id="@+id/signpage_repeat_password"
+                        android:hint="REPEAT PASSWORD"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:inputType="textPassword"
+                        android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="0.5" />
 
 
             </LinearLayout>
